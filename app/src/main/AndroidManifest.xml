@@ -15,7 +15,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Verificacion"></activity>
+        <activity android:name=".Verificacion" />
+        <activity android:name=".Inicio"></activity>
     </application>
 
 </manifest>
