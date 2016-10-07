@@ -15,10 +15,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Verificacion" />
-        <activity android:name=".Inicio" />
-        <activity android:name=".PRUEBA" />
-        <activity android:name=".menu"></activity>
+        <activity android:name=".menu" />
+        <activity android:name=".numero" />
+        <activity android:name=".validar"></activity>
     </application>
 
 </manifest>
