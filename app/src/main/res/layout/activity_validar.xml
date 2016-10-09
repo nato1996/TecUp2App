@@ -22,11 +22,12 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Inserta codigo"
+        android:hint="Inserta codigo"
         android:id="@+id/insercodigo"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="validar_onclick"
         android:text="Continuar"/>
     <TextView
         android:layout_width="match_parent"
