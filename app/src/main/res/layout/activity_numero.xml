@@ -34,5 +34,12 @@
         android:layout_height="wrap_content"
         android:text="Es una aplicacion que le permitira de manera facil, pedir un tecnico de nuestra compañia. Up2Peru es una empresa de tecnologias de la informacion y soluciones al alcance de su bolsillo y a su disponibilidad al 100%"/>
 
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone"
+        android:layout_centerInParent="true" />
 
 </LinearLayout>

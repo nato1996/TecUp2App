@@ -67,6 +67,7 @@ String telefono;
             Toast.makeText(validar.this, response.getString("mensaje"), Toast.LENGTH_SHORT).show();
             switch (estado) {
                 case "1": // EXITO
+                    startActivity(new Intent(this, Activity_Principal.class));
                     break;
                 case "2": // FALLIDO
                     break;

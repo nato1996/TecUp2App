@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.TableRow;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -28,15 +29,18 @@ import java.util.Locale;
 
 public class numero extends AppCompatActivity {
     EditText insertanumero;
+    ProgressBar pb;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_numero);
         insertanumero=(EditText)findViewById(R.id.insertanumero);
+        pb=(ProgressBar)findViewById(R.id.progressBar);
     }
 
     public void verificar_onclick(View v){
+        pb.setVisibility(View.VISIBLE);
         insertarnumero();
     }
 
@@ -53,6 +57,7 @@ public class numero extends AppCompatActivity {
                                     @Override
                                     public void onResponse(JSONObject response) {
                                         // Procesar la respuesta Json
+                                        pb.setVisibility(View.GONE);
                                         procesarnumero(response);
                                     }
                                 },
