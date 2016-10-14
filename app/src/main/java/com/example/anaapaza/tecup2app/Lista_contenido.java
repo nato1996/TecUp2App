@@ -23,13 +23,12 @@ public class Lista_contenido {
      * Creamos estáticamente las entradas
      */
     static {
-        aniadirEntrada(new Lista_entrada("0", R.drawable.logo, "BUHO", "Búho es el nombre común..."));
-        aniadirEntrada(new Lista_entrada("1", R.drawable.logo, "COLIBRÍ", "Los troquilinos (Trochilinae) son..."));
-        aniadirEntrada(new Lista_entrada("2", R.drawable.logo, "CUERVO", "El cuervo común (Corvus corax) es ..."));
-        aniadirEntrada(new Lista_entrada("3", R.drawable.logo, "FLAMENCO", "Los fenicopteriformes..."));
-        aniadirEntrada(new Lista_entrada("4", R.drawable.logo, "KIWI", "Los kiwis (Apterix, gr. 'sin alas') son..."));
-        aniadirEntrada(new Lista_entrada("5", R.drawable.logo, "LORO", "Las Psitácidas (Psittacidae) son..."));
-        aniadirEntrada(new Lista_entrada("6", R.drawable.logo, "PAVO", "Pavo es un género de aves..."));
+        aniadirEntrada(new Lista_entrada("0", R.drawable.inicio, "Inicio", "Aqui encontraras la ayuda necesaria para obtener un tecnico a su servicio"));
+        aniadirEntrada(new Lista_entrada("1", R.drawable.historial, "Historial", "Aqui encontraras la historia de tus servicios"));
+        aniadirEntrada(new Lista_entrada("2", R.drawable.tips, "Tips", "Aqui encontraras tips faciles para operar tu equipo"));
+        aniadirEntrada(new Lista_entrada("3", R.drawable.video, "Videos", "Aui encontraras videos dinamicos de instrucciones para tu equipo"));
+        aniadirEntrada(new Lista_entrada("4", R.drawable.nosotros, "Quienes somos", "Somos una empresa dediada al rubro de Tecnologias de la informacion y Sopote tecnico..."));
+
     }
 
     /** Añade una entrada a la lista
