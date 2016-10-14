@@ -16,11 +16,7 @@
         <activity
             android:name=".Activity_Principal"
             android:label="@string/app_name">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".Activity_Detalle"
@@ -31,7 +27,14 @@
                 android:value=".Activity_Detalle" />
         </activity>
         <activity android:name=".validar" />
-        <activity android:name=".formulario_equipo"></activity>
+        <activity android:name=".formulario_equipo">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
     </application>
 
 </manifest>

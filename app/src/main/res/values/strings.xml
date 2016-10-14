@@ -1,3 +1,22 @@
 <resources>
     <string name="app_name">TecUp2App</string>
+
+    <string-array name="tipoequipo">
+
+        <item>Computadora</item>
+        <item>Laptop</item>
+        <item>Impresora</item>
+        <item>Red</item>
+        <item>Ninguno</item>
+    </string-array>
+
+    <string-array name="tipotarea">
+
+        <item>Formateo</item>
+        <item>Mantenimiento</item>
+        <item>Revision</item>
+        <item>Ninguno</item>
+
+    </string-array>
+
 </resources>

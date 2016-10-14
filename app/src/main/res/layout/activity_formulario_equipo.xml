@@ -4,7 +4,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.anaapaza.tecup2app.formulario_equipo"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_horizontal_margin">
 
     <TableLayout
         android:layout_width="match_parent"
@@ -13,11 +17,14 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/fono"/>
+                android:src="@drawable/fono"
+                />
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="No se que sucede, llamar a un tecnico(via internet)"/>
+                android:text="No se que sucede, quiero llamar a un tecnico"
+                android:gravity="center"
+                android:layout_weight="1"/>
         </TableRow>
     </TableLayout>
     <TextView
@@ -26,7 +33,8 @@
         android:text="Tipo de equipo"/>
     <Spinner
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:entries="@array/tipoequipo">
     </Spinner>
 
     <TextView
@@ -35,7 +43,8 @@
         android:text="Tipo de tarea"/>
     <Spinner
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:entries="@array/tipotarea">
     </Spinner>
 
     <TableLayout
@@ -45,10 +54,11 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Nro de equipos:"/>
+                android:text="Nro de equipos:" />
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:id="@+id/nroequipos"/>
         </TableRow>
         <TableRow>
@@ -59,6 +69,7 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
                 android:numeric="integer"
                 android:id="@+id/costo"/>
         </TableRow>
@@ -66,9 +77,12 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="El tecnico se pondra en contacto a la brevedad contigo"/>
+        android:text="El tecnico se pondra en contacto a la brevedad contigo"
+        android:gravity="center"/>
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Confirmar"/>
+        android:text="Confirmar"
+        android:gravity="center"
+        android:layout_gravity="center"/>
 </LinearLayout>
